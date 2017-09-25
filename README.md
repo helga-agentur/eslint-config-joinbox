@@ -16,3 +16,7 @@ Add the following line to the `.eslintrc` file in the project root folder.
   "extends": "joinbox"
 }
 ```
+
+## Joinbox Conding Guildelines
+
+The guidelines can be found [here](https://github.com/joinbox/guidelines/blob/master/styleguide/javascript.md).
