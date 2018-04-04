@@ -232,3 +232,17 @@ class Memoized {
     static makeComplexComputation() {
     }
 }
+
+// ########################################
+// ########################################
+// Non static class methods without this
+// ########################################
+// ########################################
+
+// good
+class DummyDummy {
+    // Note throws an error results in a not working linter
+    dummyFunction() {
+        console.log('dummy');
+    }
+}

@@ -15,5 +15,7 @@ module.exports = {
         'no-underscore-dangle': ['error', { allowAfterThis: true }],
         // new rule no spaces before function paren
         'space-before-function-paren': ['error', 'never'],
+        // allow class methots to be non static without using context
+        'class-methods-use-this': 'off',
     },
 };
