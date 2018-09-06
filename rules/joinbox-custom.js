@@ -19,8 +19,17 @@ module.exports = {
         'class-methods-use-this': 'off',
         // don't require an extensions for imports from packages
         'import/extensions': 'ignorePackages',
-        // allow for of loops
-        'no-restricted-syntax': ['error', 'ForInStatement'],
+        // allow for of loops but disallow the statements below
+        'no-restricted-syntax': ['error', {
+            selector: 'ForInStatement',
+            message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+        }, {
+            selector: 'LabeledStatement',
+            message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+        }, {
+            selector: 'WithStatement',
+            message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+        }],
         // allow async operations in loops
         'no-await-in-loop': 'off',
     },
