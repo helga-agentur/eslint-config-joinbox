@@ -20,6 +20,6 @@ module.exports = {
         // don't require an extensions for imports from packages
         'import/extensions': 'ignorePackages',
         // allow for of loops
-        'no-restricted-syntax': ['ForInStatement']
+        'no-restricted-syntax': ['error', 'ForInStatement']
     },
 };
