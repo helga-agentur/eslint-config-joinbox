@@ -19,5 +19,7 @@ module.exports = {
         'class-methods-use-this': 'off',
         // don't require an extensions for imports from packages
         'import/extensions': 'ignorePackages',
+        // allow for of loops
+        'no-restricted-syntax': ['ForInStatement']
     },
 };
