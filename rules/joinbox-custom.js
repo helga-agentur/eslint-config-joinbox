@@ -17,8 +17,7 @@ module.exports = {
         'space-before-function-paren': ['error', 'never'],
         // allow class methots to be non static without using context
         'class-methods-use-this': 'off',
-        // don't require an extensions for mjs files since many
-        // of the npm modules export sepcific files
-        'import/extensions': ['never', { mjs: 'never' }],
+        // don't require an extensions for imports from packages
+        'import/extensions': 'ignorePackages',
     },
 };
