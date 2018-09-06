@@ -17,5 +17,7 @@ module.exports = {
         'space-before-function-paren': ['error', 'never'],
         // allow class methots to be non static without using context
         'class-methods-use-this': 'off',
+        // don't require an extensions for imports from packages
+        'import/extensions': 'ignorePackages',
     },
 };
