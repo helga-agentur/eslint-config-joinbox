@@ -9,8 +9,6 @@ module.exports = {
         // 18.4 alle extensive blank lines
         'padded-blocks': 'off',
         'no-multiple-empty-lines': 'off',
-        // 19.1 use for spaces
-        indent: ['error', 4],
         // 23.4
         'no-underscore-dangle': ['error', { allowAfterThis: true }],
         // new rule no spaces before function paren
@@ -32,5 +30,11 @@ module.exports = {
         }],
         // allow async operations in loops
         'no-await-in-loop': 'off',
+        // enforce indentation level for case clauses in switch statements 
+        'indent': ['error', 4, {
+            SwitchCase: 1
+        }],
+        // allow the else statement after an eraly return
+        'no-else-return': 'off',
     },
 };
