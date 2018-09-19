@@ -1,6 +1,6 @@
 {
   "name": "@joinbox/eslint-config-joinbox",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Joinbox Ltd. airbnb based linter configuration for javascript",
   "main": "index.js",
   "scripts": {
