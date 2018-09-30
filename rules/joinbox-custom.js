@@ -36,5 +36,7 @@ module.exports = {
         }],
         // allow the else statement after an eraly return
         'no-else-return': 'off',
+        // allow ++ / --
+        'no-plusplus': 'off'
     },
 };
