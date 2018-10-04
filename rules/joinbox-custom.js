@@ -34,7 +34,7 @@ module.exports = {
         'indent': ['error', 4, {
             SwitchCase: 1
         }],
-        // allow the else statement after an eraly return
+        // allow the else statement after an early return
         'no-else-return': 'off',
         // allow ++ / --
         'no-plusplus': 'off'
