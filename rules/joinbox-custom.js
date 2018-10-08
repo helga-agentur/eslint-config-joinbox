@@ -3,14 +3,14 @@ module.exports = {
         // refs: https://github.com/joinbox/guidelines/blob/master/styleguide/javascript.md
         // 7.1 allow function decalrations
         'func-style': ['off', 'declaration'],
-        // 7.1 allow only anaonymous function declarations
+        // 7.1 allow only anonymous function declarations
         'func-names': ['error', 'never'],
-        // 17.1 doesnt need a custom config rule
-        // 18.4 alle extensive blank lines
+        // 17.1 doesn't need a custom config rule
+        // 18.4 allow extensive blank lines
         'padded-blocks': 'off',
         'no-multiple-empty-lines': 'off',
         // 23.4
-        'no-underscore-dangle': ['error', { allowAfterThis: true }],
+        'no-underscore-dangle': 'off',
         // new rule no spaces before function paren
         'space-before-function-paren': ['error', 'never'],
         // allow class methots to be non static without using context
@@ -30,13 +30,17 @@ module.exports = {
         }],
         // allow async operations in loops
         'no-await-in-loop': 'off',
-        // enforce indentation level for case clauses in switch statements 
-        'indent': ['error', 4, {
-            SwitchCase: 1
+        // enforce indentation level for case clauses in switch statements
+        indent: ['error', 4, {
+            SwitchCase: 1,
         }],
         // allow the else statement after an early return
         'no-else-return': 'off',
         // allow ++ / --
-        'no-plusplus': 'off'
+        'no-plusplus': 'off',
+        // warning for no-continue
+        'no-continue': 'warn',
+        // warning for no-param-reassign
+        'no-param-reassign': 'warn',
     },
 };
