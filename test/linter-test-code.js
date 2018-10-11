@@ -246,3 +246,48 @@ class DummyDummy {
         console.log('dummy');
     }
 }
+
+
+// ########################################
+// ########################################
+// Allow continue in some cases
+// ########################################
+// ########################################
+
+// good (warning)
+const counter = 0;
+while (counter < 100) {
+    if (counter % 2 === 0) {
+        continue;
+    }
+}
+
+
+// ########################################
+// ########################################
+// Allow parameter reassignment
+// ########################################
+// ########################################
+
+// good (warning)
+const dummy = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sumOfOddNumbers = dummy.reduce((sum, number) => {
+    if (number % 2 !== 0) {
+        sum += number;
+    }
+
+    return sum;
+}, 0);
+
+
+// ########################################
+// ########################################
+// Allow underscores
+// ########################################
+// ########################################
+
+// good (warning)
+const myDummyMongoObject = {
+    _id: 'MongoId',
+};
+const id = myDummyMongoObject._id;
