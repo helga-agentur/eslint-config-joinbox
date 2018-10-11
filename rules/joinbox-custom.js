@@ -10,10 +10,10 @@ module.exports = {
         'padded-blocks': 'off',
         'no-multiple-empty-lines': 'off',
         // 23.4
-        'no-underscore-dangle': 'off',
+        'no-underscore-dangle': ['warn', { allowAfterThis: true }],
         // new rule no spaces before function paren
         'space-before-function-paren': ['error', 'never'],
-        // allow class methots to be non static without using context
+        // allow class methods to be non static without using context
         'class-methods-use-this': 'off',
         // don't require an extensions for imports from packages
         'import/extensions': 'ignorePackages',

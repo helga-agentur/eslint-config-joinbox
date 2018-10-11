@@ -286,9 +286,8 @@ const sumOfOddNumbers = dummy.reduce((sum, number) => {
 // ########################################
 // ########################################
 
-// good
+// good (warning)
 const myDummyMongoObject = {
     _id: 'MongoId',
 };
 const id = myDummyMongoObject._id;
-
