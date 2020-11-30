@@ -15,8 +15,8 @@ module.exports = {
         'space-before-function-paren': ['error', 'never'],
         // allow class methods to be non static without using context
         'class-methods-use-this': 'off',
-        // don't require an extensions for imports from packages
-        'import/extensions': 'ignorePackages',
+        // ignorePackages does not work on eslint@7 any more; requires 'off', 'error' or 'never'
+        'import/extensions': 'error',
         // allow for of loops but disallow the statements below
         'no-restricted-syntax': ['error', {
             selector: 'ForInStatement',
