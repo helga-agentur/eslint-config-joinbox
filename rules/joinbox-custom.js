@@ -16,7 +16,7 @@ module.exports = {
         // allow class methods to be non static without using context
         'class-methods-use-this': 'off',
         // ignorePackages does not work on eslint@7 any more; requires 'off', 'error' or 'never'
-        'import/extensions': 'error',
+        'import/extensions': ['error', 'always'],
         // allow for of loops but disallow the statements below
         'no-restricted-syntax': ['error', {
             selector: 'ForInStatement',
