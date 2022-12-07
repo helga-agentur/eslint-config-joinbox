@@ -12,12 +12,6 @@ module.exports = {
         'no-multiple-empty-lines': 'off',
         // 23.4
         'no-underscore-dangle': ['warn', { allowAfterThis: true }],
-        // new rule no spaces before function paren
-        'space-before-function-paren': ['error', {
-            anonymous: 'always',
-            named: 'never',
-            asyncArrow: 'always',
-        }],
         // allow class methods to be non static without using context
         'class-methods-use-this': 'off',
         // ignorePackages does not work on eslint@7 any more; requires 'off', 'error' or 'never'
