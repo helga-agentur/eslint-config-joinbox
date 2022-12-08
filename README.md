@@ -17,6 +17,6 @@ Add the following line to the `.eslintrc` file in the project root folder.
 }
 ```
 
-## Joinbox Conding Guildelines
+## Joinbox Coding Guildelines
 
 The guidelines can be found [here](https://github.com/joinbox/guidelines/blob/master/styleguide/javascript.md).
