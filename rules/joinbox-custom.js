@@ -10,5 +10,15 @@ module.exports = {
 
         // omit logs in production code but allow warnings and errors
         'no-console': ['warn', { allow: ['warn', 'error'] }],
+
+        // omit extensions also for ts imports
+        'import/extensions': [
+            'error',
+            'ignorePackages',
+            {
+                js: 'never',
+                ts: 'never',
+            },
+        ],
     },
 };
