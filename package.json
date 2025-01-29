@@ -1,6 +1,6 @@
 {
   "name": "@helga-agency/eslint-config-joinbox",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Helga Agency airbnb based linter configuration for javascript",
   "main": "index.js",
   "scripts": {
